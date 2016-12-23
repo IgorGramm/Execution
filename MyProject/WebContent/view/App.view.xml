@@ -1,0 +1,57 @@
+<mvc:View
+	controllerName="sap.ui.demo.wt.view.App"
+   	xmlns="sap.m"
+   	xmlns:mvc="sap.ui.core.mvc">
+   <App>
+ <Page 
+ 		title = "Выбор значений">
+ 	<content>
+ 	<VBox>
+ 		<HBox 	
+ 			alignItems = "Center"
+ 			id = "hBox">
+ 			<Label 	
+ 				text = "С"
+ 				class = "sapUiSmallMarginBegin"/>
+ 			<Select
+ 				id  = "selectFrom"
+ 				forceSelection="false"
+ 				class = "sapUiMediumMarginEnd sapUiTinyMarginBegin"
+ 				fieldGroupIds = "selectTop"
+ 				change = "onChangeSelectFrom">
+ 			</Select>
+ 			<Label 	
+ 				text = "По"/>
+ 			<Select
+ 				id  = "selectTo"
+ 				forceSelection="false"
+ 				class = "sapUiTinyMarginBegin"
+ 				fieldGroupIds = "selectTop"
+				change = "onChangeSelectTo">
+ 			</Select>
+ 		</HBox>
+ 		<HBox 	
+ 			alignItems = "Center">
+ 			<Label 	
+ 				text = "С"
+ 				class = "sapUiSmallMarginBegin"/>
+ 			<Select
+ 				id  = "selectBottomLeft"
+ 				forceSelection="false"
+ 				class = "sapUiMediumMarginEnd sapUiTinyMarginBegin"
+ 				change = "onSelectChange">
+ 			</Select>
+ 			<Label 	
+ 				text = "По"/>
+ 			<Select
+ 				id  = "selectBottomRight"
+ 				forceSelection="false"
+ 				class = "sapUiTinyMarginBegin"
+ 				change = "onSelectChange">
+ 			</Select>
+ 		</HBox>
+ 		</VBox>
+ 	</content>
+</Page>
+</App>
+</mvc:View>
