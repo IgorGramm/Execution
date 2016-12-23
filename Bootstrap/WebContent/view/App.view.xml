@@ -1,0 +1,26 @@
+<mvc:View
+	displayBlock = "true"
+	xmlns = "sap.m"
+	xmlns:mvc = "sap.ui.core.mvc"
+	controllerName = "webContent.view.App"> <!-- Объявили библиотеки и имя контроллера с которым будем работать -->
+	<App class = "igorApp">
+		<pages>
+			<Page
+				title = "{i18n>page.title}"
+				class = "igorHomePage">
+					<content>
+						<Panel
+							headerText = "{i18n>modal.windiw.panel.text}"
+							class = "sapUiResponsiveMargin"
+							width = "auto">
+							<content>
+								<Button text = "Вызвать диалог"
+										press = "onPressDialog"/>
+							</content>
+						</Panel>					
+						<mvc:XMLView viewName = "webContent.view.AutorPanel"/>
+					</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

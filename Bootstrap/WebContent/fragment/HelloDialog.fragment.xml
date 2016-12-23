@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+xmlns = "sap.m"
+xmlns:core = "sap.ui.core">
+	<Dialog
+		id = "helloDialog"
+		title = "{i18n>dialog.title.text}"
+		afterClose = "onAfterCloseDialog"
+		icon = "sap-icon://{copmData>/dialogIconName}">
+		<content>
+			<Label 
+				text = "Имя иконки"/>
+			<Input
+				value = "{copmData>/dialogIconName}"/>
+		</content>
+		<buttons>
+			<Button
+				text = "{i18n>dialog.button.close}"
+				press = "onCloseDialog"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,30 @@
+<mvc:View
+	displayBlock = "true"
+	xmlns = "sap.m"
+	xmlns:mvc = "sap.ui.core.mvc"
+	controllerName = "webContent.view.AutorPanel"> <!-- Объявили библиотеки и имя контроллера с которым будем работать -->
+
+		<Panel
+			headerText = "{i18n>autor.inform.panel.text}"
+			class = "sapUiResponsiveMargin autorPanel"
+			width = "auto">
+				<content>
+					<Button
+						class = "sapUiSmallMarginEnd"
+						text = "{i18n>button}"
+						press = "onPress"/>
+					<Input
+						value = "{copmData>/developerName}"
+						width = "60%"/>
+					<Text
+						text = "Привет: {copmData>/developerName}"
+						class = "sapUiSmallMargin igorTextAutor"
+						width = "10%"/>
+					<Button
+						text = "{i18n>button.reuse.dialog}"
+						icon="sap-icon://hello-world"
+						press="onOpenDialog"/>
+				</content>
+		</Panel>
+				
+</mvc:View>
